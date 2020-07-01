@@ -14,6 +14,3 @@ Then Below Header links are displayed
 |search text box|
 
 
-
-
-

@@ -26,9 +26,11 @@ private By nav_link_account =By.xpath("//a[@id='nav-link-accountList']");
 private By nav_link_orders =By.xpath("//a[@id='nav-orders']");
 private By nav_link_prime =By.xpath("//a[@id='nav-link-prime']");
 private By nav_link_cart =By.xpath("//a[@id='nav-cart']");
+private By cart_Product_count=By.id("nav-cart-count");
 
 private String hamburger_menu_category_link_xpath = "//div[@id='hmenu-container']//div[text()='%s']";
 private String hamburger_menu_sub_category_link_xpath = "//div[@id='hmenu-container']//a[text()='%s']";
+
 
 
 public CommonPageObj(WebDriver driver,Scenario s)
@@ -38,6 +40,15 @@ setDriver(driver);
 this.scn = s;
 		
 }//SearchPageObj
+
+public String get_Cart_value()
+{
+	
+String cartValue=getText(cart_Product_count);
+logger.info("Cart Product Value:"+cartValue);		
+return cartValue;
+
+ }//get_Cart_value
 
 public void SetSearchTextBox(String text)
 {
@@ -143,9 +154,6 @@ scn.write("Header link is not displayed: " + text);
 Assert.assertFalse(b);
 }//else
 
-
-	
 }//ValidateElementPresentInHeader
-	
 
 }//HomePageObj

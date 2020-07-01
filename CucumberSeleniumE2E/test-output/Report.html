@@ -45,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jun 30, 2020 01:39:01 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 1, 2020 02:00:43 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -61,6 +61,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -73,8 +74,10 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@ui</a></li>
-					<li><a href='#'>@search</a></li>
-					<li><a href='#'>@TC0008</a></li>
+					<li><a href='#'>@AddToCart</a></li>
+					<li><a href='#'>@TC0036</a></li>
+					<li><a href='#'>@TC0032</a></li>
+					<li><a href='#'>@TC0038</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -115,10 +118,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>1</span> others
                 </div>
             </div>
         </div>
@@ -129,10 +132,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='25%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75%'>3</span> others
                 </div>
             </div>
         </div>
@@ -143,10 +146,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='82%'><span class='strong'>41</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='18%'>9</span> others
                 </div>
             </div>
         </div>
@@ -164,11 +167,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Search functionality</span>
-						<span class='test-time'>Jun 30, 2020 01:39:01 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Add to cart functionality</span>
+						<span class='test-time'>Jul 1, 2020 02:00:44 PM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -177,15 +180,15 @@
     <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='skip'>
     <div class='category-list'>
         <span class='category label'>@ui</span>
-        <span class='category label'>@search</span>
-        <span class='category label'>@TC0008</span>
+        <span class='category label'>@AddToCart</span>
+        <span class='category label'>@TC0036</span>
     </div>
-    <span class='duration right label'>0h 0m 26s+614ms</span>
+    <span class='duration right label'>0h 0m 36s+64ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: A User Should be Able to click on a product link from the search page and product description page should be displayed.</div>
+        <div class="scenario-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span> Scenario: Add A Product To Cart and Validate cart window with product added</div>
     </div>
     <ul class='steps'>
         <li test-id='3' class='node asterisk pass' status='pass'>
@@ -200,31 +203,216 @@
             <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</div>
                 <div class="node-step"></div>
         </li>
-        <li test-id='6' class='node when pass' status='pass'>
-            <div class="step-name" title="SearchStepDefination1.i_search_for_product_as_something(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I search for product as "Dell"</div>
+        <li test-id='6' class='node and pass' status='pass'>
+            <div class="step-name" title="SearchStepDefination1.i_search_for_product_as_something(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I search for product as "Dell"</div>
                 <div class="node-step"></div>
         </li>
         <li test-id='7' class='node asterisk pass' status='pass'>
             <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</div>
                 <div class="node-step"></div>
         </li>
-        <li test-id='8' class='node and pass' status='pass'>
-            <div class="step-name" title="SearchStepDefination.i_click_on_any_product_in_the_Search_result()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I click on any product in the Search result</div>
-                <div class="node-step">Clicked on the First Product Link</div>
+        <li test-id='8' class='node when pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I click on any product in the Search Result and added to cart</div>
         </li>
         <li test-id='9' class='node asterisk pass' status='pass'>
             <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</div>
                 <div class="node-step"></div>
         </li>
-        <li test-id='10' class='node then pass' status='pass'>
-            <div class="step-name" title="SearchStepDefination.i_am_able_to_see_product_description_and_details_in_new_tab()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I am able to see product description and details in new tab</div>
-                <div class="node-step">actual: Dell Inspiron 3585 15.6-inch Laptop (Ryzen 3 2200U/4GB/1TB HDD/Windows 10 + MS Office/Vega 3 Graphics/Silver) , Expected: Dell Inspiron 3585 15.6-inch Laptop (Ryzen 3 2200U/4GB/1TB HDD/Windows 10 + MS Office/Vega 3 Graphics/Silver)</div>
+        <li test-id='10' class='node then skip' status='skip'>
+            <div class="step-name" title="AddToCartStepDefination.count_Of_The_Cart_Should_Be_Displayed_As(Integer)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Count Of The Cart Should Be Displayed As 1</div>
+                <div class="node-step">Step skipped</div>
         </li>
-        <li test-id='11' class='node asterisk pass' status='pass'>
+        <li test-id='11' class='node asterisk skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>SearchStepDefination.AfterEachLine()</div>
+                <div class="node-step">Step skipped</div>
+        </li>
+        <li test-id='12' class='node and pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I click on Cart button then User Should Be Able To Navigate To Cart Window With The Product Added</div>
+        </li>
+        <li test-id='13' class='node asterisk skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>SearchStepDefination.AfterEachLine()</div>
+                <div class="node-step">Step skipped</div>
+        </li>
+        <li test-id='14' class='node asterisk pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.CleanUp(Scenario)</div>
+                <div class="node-step">Browser is Closed</div>
+        </li>
+    </ul>
+</div>
+<div class='scenariooutline node' test-id='15' status='skip'>
+    <div class='category-list'>
+        <span class='category label'>@TC0032</span>
+    </div>
+    <span class='duration right label'>0h 0m 35s+714ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span> ScenarioOutline: User should be able to Remove the items from Add To Cart list</div>
+        <table class='runtime-table table-striped table'><tr><td>name</td></tr><tr><td>Dell</td></tr><tr><td>Mobile</td></tr></table>
+    </div>
+    <ul class='steps'>
+        <li test-id='16' class='node scenario skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>User should be able to Remove the items from Add To Cart list</div>
+            <ul class='gc steps'>
+                    <li test-id='17' class='gc asterisk pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.SetUp(Scenario)</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='18' class='gc given pass' status='pass'>
+                        <h6 class="step-name" title="SearchStepDefination.i_have_browser_opened_and_url_is_navigated()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I have browser opened and url is navigated</h6>
+                            <div class="node-step">Chrome Driver invoked and URL Navigated as: https://www.amazon.in/</div>
+                    </li>
+                    <li test-id='19' class='gc asterisk pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='20' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I search for product as Dell and add it to cart</h6>
+                    </li>
+                    <li test-id='21' class='gc asterisk pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='22' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I click on Cart</h6>
+                    </li>
+                    <li test-id='23' class='gc asterisk skip' status='skip'>
+                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step">Step skipped</div>
+                    </li>
+                    <li test-id='24' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I click on Delete button</h6>
+                    </li>
+                    <li test-id='25' class='gc asterisk skip' status='skip'>
+                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step">Step skipped</div>
+                    </li>
+                    <li test-id='26' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I get message as "Your Amazon cart is empty"</h6>
+                    </li>
+                    <li test-id='27' class='gc asterisk skip' status='skip'>
+                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step">Step skipped</div>
+                    </li>
+                    <li test-id='28' class='gc asterisk pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.CleanUp(Scenario)</h6>
+                            <div class="node-step">Browser is Closed</div>
+                    </li>
+            </ul>
+        </li>
+        <li test-id='29' class='node scenario skip' status='skip'>
+            <div class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>User should be able to Remove the items from Add To Cart list</div>
+            <ul class='gc steps'>
+                    <li test-id='30' class='gc asterisk pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.SetUp(Scenario)</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='31' class='gc given pass' status='pass'>
+                        <h6 class="step-name" title="SearchStepDefination.i_have_browser_opened_and_url_is_navigated()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I have browser opened and url is navigated</h6>
+                            <div class="node-step">Chrome Driver invoked and URL Navigated as: https://www.amazon.in/</div>
+                    </li>
+                    <li test-id='32' class='gc asterisk pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='33' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I search for product as Mobile and add it to cart</h6>
+                    </li>
+                    <li test-id='34' class='gc asterisk pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='35' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I click on Cart</h6>
+                    </li>
+                    <li test-id='36' class='gc asterisk skip' status='skip'>
+                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step">Step skipped</div>
+                    </li>
+                    <li test-id='37' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I click on Delete button</h6>
+                    </li>
+                    <li test-id='38' class='gc asterisk skip' status='skip'>
+                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step">Step skipped</div>
+                    </li>
+                    <li test-id='39' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I get message as "Your Amazon cart is empty"</h6>
+                    </li>
+                    <li test-id='40' class='gc asterisk skip' status='skip'>
+                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>SearchStepDefination.AfterEachLine()</h6>
+                            <div class="node-step">Step skipped</div>
+                    </li>
+                    <li test-id='41' class='gc asterisk pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.CleanUp(Scenario)</h6>
+                            <div class="node-step">Browser is Closed</div>
+                    </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class='scenario node' test-id='42' status='pass'>
+    <div class='category-list'>
+        <span class='category label'>@ui</span>
+        <span class='category label'>@AddToCart</span>
+        <span class='category label'>@TC0038</span>
+    </div>
+    <span class='duration right label'>0h 0m 30s+478ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate the cart value in the header section is updated after adding product</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='43' class='node asterisk pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.SetUp(Scenario)</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='44' class='node given pass' status='pass'>
+            <div class="step-name" title="SearchStepDefination.i_have_browser_opened_and_url_is_navigated()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given I have browser opened and url is navigated</div>
+                <div class="node-step">Chrome Driver invoked and URL Navigated as: https://www.amazon.in/</div>
+        </li>
+        <li test-id='45' class='node asterisk pass' status='pass'>
             <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</div>
                 <div class="node-step"></div>
         </li>
-        <li test-id='12' class='node asterisk pass' status='pass'>
+        <li test-id='46' class='node and pass' status='pass'>
+            <div class="step-name" title="SearchStepDefination1.i_search_for_product_as_something(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I search for product as "Samsung"</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='47' class='node asterisk pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='48' class='node and pass' status='pass'>
+            <div class="step-name" title="AddToCartStepDefination.i_get_a_text_for_cart()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I get a text for cart</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='49' class='node asterisk pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='50' class='node and pass' status='pass'>
+            <div class="step-name" title="SearchStepDefination.i_click_on_any_product_in_the_Search_result()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I click on any product in the Search result</div>
+                <div class="node-step">Clicked on the First Product Link</div>
+        </li>
+        <li test-id='51' class='node asterisk pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='52' class='node when pass' status='pass'>
+            <div class="step-name" title="AddToCartStepDefination.i_click_on_Add_to_Cart_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I click on Add to Cart button</div>
+                <div class="node-step">Clicked on Add_TO_Cart Button</div>
+        </li>
+        <li test-id='53' class='node asterisk pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='54' class='node then pass' status='pass'>
+            <div class="step-name" title="AddToCartStepDefination.i_am_able_to_see_the_cart_value_gets_updated_in_the_header_section()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then I am able to see the cart value gets updated in the header section</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='55' class='node asterisk pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.AfterEachLine()</div>
+                <div class="node-step"></div>
+        </li>
+        <li test-id='56' class='node asterisk pass' status='pass'>
             <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>SearchStepDefination.CleanUp(Scenario)</div>
                 <div class="node-step">Browser is Closed</div>
         </li>
@@ -274,14 +462,15 @@
 					<div class='category-heading'>
 						<span class='category-name'>@ui</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label pass'>1</span>
+						<span class='label others'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							
+							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 4</span>
 						</div>
 						<div class='category-tests'>
 							<table class='bordered table-results'>
@@ -294,13 +483,28 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 30, 2020 01:39:01 PM</td>
-										<td class='linked' test-id='1'>Search functionality</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jul 1, 2020 02:00:44 PM</td>
+										<td class='linked' test-id='1'>Add to cart functionality</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Jun 30, 2020 01:39:01 PM</td>
-										<td class='linked' test-id='2'>Search functionality.A User Should be Able to click on a product link from the search page and product description page should be displayed.</td>
+										<td>Jul 1, 2020 02:00:44 PM</td>
+										<td class='linked' test-id='2'>Add to cart functionality.Add A Product To Cart and Validate cart window with product added</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 02:01:20 PM</td>
+										<td class='linked' test-id='16'>Add to cart functionality.User should be able to Remove the items from Add To Cart list.User should be able to Remove the items from Add To Cart list</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 02:01:38 PM</td>
+										<td class='linked' test-id='29'>Add to cart functionality.User should be able to Remove the items from Add To Cart list.User should be able to Remove the items from Add To Cart list</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 02:01:56 PM</td>
+										<td class='linked' test-id='42'>Add to cart functionality.Validate the cart value in the header section is updated after adding product</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -310,16 +514,17 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@search</span>
+						<span class='category-name'>@AddToCart</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label pass'>1</span>
+						<span class='label others'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							
+							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 4</span>
 						</div>
 						<div class='category-tests'>
 							<table class='bordered table-results'>
@@ -332,13 +537,28 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 30, 2020 01:39:01 PM</td>
-										<td class='linked' test-id='1'>Search functionality</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jul 1, 2020 02:00:44 PM</td>
+										<td class='linked' test-id='1'>Add to cart functionality</td>
+										<td><span class='test-status skip'>skip</span></td>
 									</tr>
 									<tr>
-										<td>Jun 30, 2020 01:39:01 PM</td>
-										<td class='linked' test-id='2'>Search functionality.A User Should be Able to click on a product link from the search page and product description page should be displayed.</td>
+										<td>Jul 1, 2020 02:00:44 PM</td>
+										<td class='linked' test-id='2'>Add to cart functionality.Add A Product To Cart and Validate cart window with product added</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 02:01:20 PM</td>
+										<td class='linked' test-id='16'>Add to cart functionality.User should be able to Remove the items from Add To Cart list.User should be able to Remove the items from Add To Cart list</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 02:01:38 PM</td>
+										<td class='linked' test-id='29'>Add to cart functionality.User should be able to Remove the items from Add To Cart list.User should be able to Remove the items from Add To Cart list</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 02:01:56 PM</td>
+										<td class='linked' test-id='42'>Add to cart functionality.Validate the cart value in the header section is updated after adding product</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -348,7 +568,83 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@TC0008</span>
+						<span class='category-name'>@TC0036</span>
+						<span class='category-status right'>
+						<span class='label others'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							
+							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 1</span>
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 1, 2020 02:00:44 PM</td>
+										<td class='linked' test-id='2'>Add to cart functionality.Add A Product To Cart and Validate cart window with product added</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@TC0032</span>
+						<span class='category-status right'>
+						<span class='label others'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							
+							<span status="skip" class='label yellow darken-2 white-text'>Skipped: 3</span>
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 1, 2020 02:01:20 PM</td>
+										<td class='linked' test-id='15'>Add to cart functionality.User should be able to Remove the items from Add To Cart list</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 02:01:20 PM</td>
+										<td class='linked' test-id='16'>Add to cart functionality.User should be able to Remove the items from Add To Cart list.User should be able to Remove the items from Add To Cart list</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Jul 1, 2020 02:01:38 PM</td>
+										<td class='linked' test-id='29'>Add to cart functionality.User should be able to Remove the items from Add To Cart list.User should be able to Remove the items from Add To Cart list</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@TC0038</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -370,8 +666,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 30, 2020 01:39:01 PM</td>
-										<td class='linked' test-id='2'>Search functionality.A User Should be Able to click on a product link from the search page and product description page should be displayed.</td>
+										<td>Jul 1, 2020 02:01:56 PM</td>
+										<td class='linked' test-id='42'>Add to cart functionality.Validate the cart value in the header section is updated after adding product</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -402,31 +698,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>50</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 30, 2020 01:39:01 PM</div>
+					<div class='panel-lead'>Jul 1, 2020 02:00:43 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 30, 2020 01:39:28 PM</div>
+			 		<div class='panel-lead'>Jul 1, 2020 02:02:26 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 27s+53ms</div>
+					<div class='panel-lead'>0h 1m 43s+238ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -443,24 +739,42 @@
 						</tr>
 						<tr>
 							<td>@ui</td>
-							<td>2</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
-									100%
+									20%
 							</td>
 						</tr>
 						<tr>
-							<td>@search</td>
-							<td>2</td>
+							<td>@AddToCart</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
-									100%
+									20%
 							</td>
 						</tr>
 						<tr>
-							<td>@TC0008</td>
+							<td>@TC0036</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@TC0032</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@TC0038</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -480,38 +794,38 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
+				passParent: 0,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 0,
-				childCount: 1,
+				skipParent: 1,
+				exceptionsParent: 1,
+				childCount: 4,
 				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 3,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 10,
-				passGrandChild: 10,
+				exceptionsChild: 3,
+				grandChildCount: 50,
+				passGrandChild: 41,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 9,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 9,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Search functionality":26.614
+			        "Add to cart functionality":102.331
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

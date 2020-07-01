@@ -8,10 +8,12 @@ import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -100,6 +102,15 @@ logger.info("List of Elements returned for description: "+ by.toString());
 return element.findElements(by);
 
 }//getListOfWebElements
+
+
+public void MoveMouseOverElement(By by)
+{
+WebDriverWait wait = new WebDriverWait(driver,60);
+WebElement element = wait.until(ExpectedConditions.elementToBeClickable(by));
+Actions a = new Actions(driver);
+a.moveToElement(element).build().perform();	
+}//MoveMouseOverElement
 
 public void switchToWindowTab(String WindowId)
 {

@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 features = "src/test/java/features",
 glue = "StepDefinations",
-tags ="@TC0008",
+tags ="@AddToCart",
 monochrome = true,
 
 dryRun=false,

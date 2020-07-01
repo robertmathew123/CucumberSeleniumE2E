@@ -27,6 +27,16 @@ this.scn = s;
 		
 }//SearchPageObj
 
+public String ClickOnFirstProduct()
+{
+	
+List<WebElement> list = getListOfWebElements(product_list);
+clickElement(list.get(1));
+scn.write("Clicked on First Product Link");
+return list.get(1).getText();
+
+}//ClickOnFirstProduct
+
 
 public String ClickOnProductLink()
 {
